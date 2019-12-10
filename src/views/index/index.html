@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <title>
+            <%= htmlWebpackPlugin.options.htmlTitle %>
+        </title>
+        <%= htmlWebpackPlugin.options.saMetaArr %>
+        <meta content="true" name="autoclick" />
+        <meta content="11" name="siteid" />
+        <meta content="112" name="pageid" />
+        <%= htmlWebpackPlugin.options.appHeader %>
+        <!-- 集成听云，前端框架css 等-->
+    </head>
+
+    <body>
+        <%= htmlWebpackPlugin.options.dbpInputArr %>
+        <div id="root"></div>
+        <div class="page-loading">
+            <div class="loading-wrap">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <%= htmlWebpackPlugin.options.appScript %>
+        <!-- 集成前端框架js，滑动验证，人机，设备指纹，端测埋点 -->
+    </body>
+</html>

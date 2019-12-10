@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container-padding {
+    padding: 0 30px;
+}
+
+/* 全屏loading */
+.page-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-loading .loading-wrap {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 225px;
+    height: 175px;
+    margin: -87.5px 0 0 -112.5px;
+    transform-origin: 10 10;
+    animation: loadingWrapCircle 1.5s infinite linear;
+}
+
+.page-loading .loading {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 225px;
+    height: 175px;
+    animation: loadingCircle 1.5s infinite linear;
+    background-image: url('data:image/png;base64,iVBORw0KGgoA');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes loadingWrapCircle {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes loadingCircle {
+    to {
+        transform: rotate(-1turn);
+    }
+}
