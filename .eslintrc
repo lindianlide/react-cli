@@ -1,0 +1,53 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        //指定脚本的运行环境。每种环境都有一组特定的预定义全局变量。
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es6": true,
+        "jquery": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalDecorators": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "react-hooks"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "react/prop-types": "off",
+        "no-debugger": 0,
+        "@typescript-eslint/no-extra-semi": "off",
+        "react/display-name": "off"
+    },
+    "globals": {
+        "var2": false,
+        "React": true,
+        "$": true,
+        "Swiper": true,
+        "URL_CONST": true,
+        "wx": true,
+    },
+    "settings": {
+        "react": {
+            "version": "detect" // 告诉 eslint-plugin-react 自动检测 React 的版本
+        }
+    }
+}

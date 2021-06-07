@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>
+        <%= htmlWebpackPlugin.options.htmlTitle %>
+    </title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="full-screen" content="true" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta content="true" name="autoclick" />
+    <meta content="" name="siteid" />
+    <meta content="" name="pageid" />
+</head>
+
+<body>
+    <%= htmlWebpackPlugin.options.saInputArr %>
+        <div class="page-loading"></div>
+        <div id="app"></div>
+        <%= htmlWebpackPlugin.options.appScript %>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.mem-progress {
+    &-outer {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        width: 176px;
+        height: 24px;
+        background: #ffffff;
+        border: 2px solid #fb8a89;
+        border-radius: 12px;
+        .percent-text {
+            position: relative;
+            display: inline-block;
+            font-size: 22px;
+            font-weight: 400;
+            color: #b01408;
+            line-height: 24px;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+
+    &-bar {
+        position: absolute;
+        height: 21px;
+        background: #fb8a89;
+        border-radius: 12px;
+        left: 0px;
+    }
+}
